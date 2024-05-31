@@ -1,0 +1,264 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 0 80px;
+  font-weight: 400;
+  font-size: 26px;
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.logo-container {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(27, 66, 207, 1);
+  font-size: 50px;
+  margin: 0 0 12px 50px;
+}
+
+.profile-1 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-1 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(7, 57, 238, 0.94);
+  margin-left: 49px;
+}
+
+.profile-1 img {
+  scale: 0.6;
+}
+
+.profile-ul {
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+}
+
+ul {
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  font-family: "segoe ui", sans-serif;
+}
+ul > li {
+  display: inline-block;
+}
+ul > li > a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+ul > li > a:before,
+ul > li > a:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 0%;
+  height: 3px;
+  background: rgba(7, 57, 238, 0.94);
+  transition: 0.3s;
+}
+ul > li > a:before {
+  left: 50%;
+}
+ul > li > a:after {
+  right: 50%;
+}
+ul > li > a:hover:before,
+ul > li > a:hover:after {
+  width: 50%;
+}
+
+.container-for-background {
+  padding-top: 100px;
+  width: 100%;
+  height: 682px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-for-background img {
+  height: 600;
+}
+
+.container-for-characteristics {
+  box-shadow: rgba(97, 100, 104, 0.2) 0px 8px 24px;
+  height: 520px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 501px;
+  border-radius: 20px;
+  left: 35%;
+  top: 160px;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.texts {
+  font-size: 27px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 180px;
+}
+.texts :last-child {
+  font-size: 20px;
+  color: #8f8f8f;
+  line-height: 70px;
+}
+
+.weights {
+  width: 82%;
+  height: 230px;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -30px;
+}
+
+
+.myButton {
+  background-color: white;
+  height: 55px;
+  width: 95%;
+  border: 3px solid;
+  border-radius: 10px;
+  border-color: rgba(138, 138, 138, 1);
+  text-align: start;
+  cursor: pointer;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.clicked {
+  color: rgba(27, 66, 207, 1);
+  border-color: rgba(27, 66, 207, 1);
+  background-color: white;
+  height: 55px;
+  width: 95%;
+  border: 3px solid;
+  border-radius: 10px;
+  text-align: start;
+  cursor: pointer;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  width: 90%;
+}
+
+.btn {
+  background-color: rgba(14, 55, 205, 0.94);
+  color: white;
+  border-radius: 15px;
+  font-size: 24px;
+  font-weight: 200;
+  padding: 10px 40px 15px 40px;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btns p {
+  font-size: 25px;
+  margin: 0 20px 0;
+  color: rgba(119, 119, 119, 0.94);
+}
+
+.btns :first-child {
+  background-color: white;
+  color: rgba(28, 67, 208, 1);
+  border: solid;
+  border-color: rgba(28, 67, 208, 1);
+}
+
+.btns :first-child:hover {
+  background-color: rgba(28, 67, 208, 1);
+  color: white;
+  transition: 0.3s linear;
+}
+
+.btns :last-child:hover {
+  background-color: rgb(12, 47, 172);
+  transition: 0.3s linear;
+}

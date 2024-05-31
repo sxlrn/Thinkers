@@ -1,0 +1,194 @@
+/* styles.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  font-family: "segoe ui", sans-serif;
+}
+ul > li {
+  display: inline-block;
+}
+ul > li > a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+ul > li > a:before,
+ul > li > a:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 0%;
+  height: 3px;
+  background: rgba(7, 57, 238, 0.94);
+  transition: 0.3s;
+}
+ul > li > a:before {
+  left: 50%;
+}
+ul > li > a:after {
+  right: 50%;
+}
+ul > li > a:hover:before,
+ul > li > a:hover:after {
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 0 80px;
+  font-weight: 400;
+  font-size: 26px;
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.logo-container {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(27, 66, 207, 1);
+  font-size: 50px;
+  margin: 0 0 12px 50px;
+}
+
+.profile-1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 750px;
+}
+
+.profile-1 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(7, 57, 238, 0.94);
+  margin-left: 49px;
+}
+
+.profile-ul {
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container-for-text-and-plate {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: 675px;
+}
+
+.plate-img {
+  display: inline-block;
+  scale: 0.75;
+  margin: -90px 0 0 -30px;
+}
+
+.text {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 125px 0 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-1 {
+  line-height: 200px;
+  font-size: 50px;
+  margin-left: -250px;
+  margin-top: -70px;
+  margin-bottom: 20px;
+}
+
+.text-2 {
+  font-size: 150px;
+  margin-top: -100px;
+  margin-left: 123px;
+  margin-bottom: 60px;
+  color: rgba(27, 66, 207, 1);
+  line-height: 200px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-1 {
+  background-color: rgba(14, 55, 205, 0.94);
+  color: white;
+  border-radius: 15px;
+  font-size: 32px;
+  font-weight: 200;
+  padding: 15px 50px 22px 50px;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.btn-2 {
+  background-color: rgba(14, 55, 205, 0.94);
+  color: white;
+  border-radius: 15px;
+  font-size: 32px;
+  font-weight: 200;
+  padding: 15px 50px 22px 50px;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btns p {
+  font-size: 25px;
+  margin: 0 20px 0;
+  color: rgba(119, 119, 119, 0.94);
+}
+
+.btn-1 {
+  background-color: white;
+  color: rgba(28, 67, 208, 1);
+  border: solid;
+  border-color: rgba(189, 189, 189, 1);
+  padding: 15px 60px 22px 60px;
+}
+
+.btn-1:hover {
+  background-color: rgba(27, 66, 207, 1);
+  color: rgb(255, 255, 255);
+  transition: 0.2s linear;
+}
+
+.btn-2:hover {
+  background-color: rgb(12, 47, 172);
+  transition: 0.2s linear;
+}
