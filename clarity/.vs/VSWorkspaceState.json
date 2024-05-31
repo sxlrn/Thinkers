@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\client",
+    "\\client\\public",
+    "\\client\\src",
+    "\\client\\src\\assets",
+    "\\server",
+    "\\server\\models"
+  ],
+  "SelectedNode": "\\server\\profile.js",
+  "PreviewInSolutionExplorer": false
+}

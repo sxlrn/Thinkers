@@ -1,0 +1,19 @@
+{
+  "name": "clarity",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sxlrn/Thinkers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sxlrn/Thinkers/issues"
+  },
+  "homepage": "https://github.com/sxlrn/Thinkers#readme",
+  "description": ""
+}
